@@ -7,7 +7,7 @@ import store from "./components/store"
 Vue.config.productionTip = false
 
 
-Vue.use(ElementUI)
+Vue.use(ElementUI,{size:'mini'})
 /* eslint-disable no-new */
 import ElementUI from "element-ui"
 import "element-ui/lib/theme-chalk/index.css"
