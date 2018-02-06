@@ -44,9 +44,9 @@ export default {
     return {
     //   input10: '',
         input2: '',
-      input21: '',
-      input22: '',
-      input23: ''
+        input21: '',
+        input22: '',
+        input23: ''
     }
   },
   methods:{

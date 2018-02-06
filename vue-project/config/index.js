@@ -12,6 +12,26 @@ module.exports = {
       "/users": {
         target: "http://127.0.0.1:3000",
         changeOrigin: true,
+      },
+      "/movies": {
+        target: "http://127.0.0.1:3000",
+        changeOrigin: true,
+      },
+      "/studios": {
+        target: "http://127.0.0.1:3000",
+        changeOrigin: true,
+      },
+      "/theaters": {
+        target: "http://127.0.0.1:3000",
+        changeOrigin: true,
+      },
+      "/schedules": {
+        target: "http://127.0.0.1:3000",
+        changeOrigin: true,
+      },
+      "/imgs": {
+        target: "http://127.0.0.1:3000",
+        changeOrigin: true,
       }
     },
 

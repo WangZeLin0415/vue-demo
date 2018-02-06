@@ -14,7 +14,11 @@ import Theather from "../components/app/theather/theather"
 import TheatherList from "../components/app/theather/theatherList"
 import Schedule from "../components/app/schedules/schedules"
 import ScheduleList from "../components/app/schedules/schedulesList"
-
+import ScheduleMovie from "../components/app/scheduleMovie/scheduleMovie"
+import ScheduleTheater from "../components/app/scheduleTheater/scheduleTheater"
+import ShowTime from "../components/app/showTime/showTime"
+import Img from "../components/app/imgs/imgs"
+import SeachPic from "../components/app/movie/seachPic"
 
 Vue.component("Reg",Reg)
 Vue.component("Login",Login)
@@ -25,9 +29,13 @@ Vue.component("Studio",Studio)
 Vue.component("StudioList",StudioList)
 Vue.component("Theather",Theather)
 Vue.component("TheatherList",TheatherList)
-
+Vue.component("ScheduleMovie",ScheduleMovie)
+Vue.component("ShowTime",ShowTime)
 Vue.component("Schedule",Schedule)
 Vue.component("ScheduleList",ScheduleList)
+Vue.component("ScheduleTheater",ScheduleTheater)
+Vue.component("Img",Img)
+Vue.component("SeachPic",SeachPic)
 
 export default new Router({
   routes: [
@@ -36,6 +44,7 @@ export default new Router({
       name: 'Login',
       component: Login
     },
+    
     {
       path: '/reg',
       name: 'Reg',
@@ -95,6 +104,31 @@ export default new Router({
           path: "scheduleList",
           name: "ScheduleList",
           component: ScheduleList
+        },
+        {
+          path: "scheduleMovie/:movieId/:showTime",
+          name: "ScheduleMovie",
+          component: ScheduleMovie
+        },
+        {
+          path: "scheduleTheater/:studioId/:showTime",
+          name: "ScheduleTheater",
+          component: ScheduleTheater
+        },
+        {
+          path: "showTime/:theaterId/:showTime",
+          name: "ShowTime",
+          component: ShowTime
+        },
+        {
+          path: "imgs/:movieId",
+          name: "Img",
+          component: Img
+        },
+        {
+          path: "seachPic/:_id",
+          name: "SeachPic",
+          component: SeachPic
         },
       ]
     }

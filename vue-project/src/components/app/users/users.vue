@@ -1,17 +1,21 @@
 <template>
-    <div>users</div>
+<div>user</div>
 </template>
 
 <script>
 export default {
-  name: 'Users',
-  data () {
+  name: "Users",
+  data() {
     return {
-  
-    }
+     
+    };
   },
-  methods:{
+  computed: {
     
-  }
-}
+  },
+  methods: {
+     
+   
+  },
+};
 </script>
